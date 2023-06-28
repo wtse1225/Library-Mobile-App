@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Library_WaiHingWilliamTse.BookList"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    
+    <StackLayout Spacing="20" Padding="16">
+        <Label Text="Book List" FontSize="30" HorizontalTextAlignment="Center" />
+        <Label x:Name="welcomeMsg" FontSize="18" TextColor="CadetBlue" HorizontalTextAlignment="Center"/>
+        
+        <!--List view for all available books-->
+        <ListView x:Name="lvBooks" 
+                  ItemSelected="lvBooks_ItemSelected">
+            
+            <!--Using built-in template-->
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    
+                    <!--Text cell that contains two lines of information-->
+                    <TextCell Text="{Binding Title}" Detail="{Binding Author}" TextColor="DarkSlateBlue">
+                        
+                        <!--"Context Action" that fires options on top when long pressing an item-->
+                        <TextCell.ContextActions>
+                            <MenuItem Text="CHECK OUT" Clicked="CheckOut_Clicked"/>
+                            <MenuItem Text="RETURN" Clicked="Return_Clicked"/>
+                        </TextCell.ContextActions>
+                        
+                    </TextCell>                    
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Label x:Name="statusMsg" IsVisible="false" FontSize="20" HeightRequest="50" 
+               TextColor="Gold" BackgroundColor="Brown" 
+               VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+
+    </StackLayout>    
+</ContentPage>
