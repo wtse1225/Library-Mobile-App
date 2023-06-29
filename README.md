@@ -6,5 +6,5 @@ This library mobile app leverages Xamarin.Forms and SQLite to provide a user-fri
 • Book details are modeled using a custom class with properties such as ISBN-10 number, title, author, borrowing status, and borrower. Data persistence is implemented using SQLite, utilizing the sqlite-net-pcl library. The database is prepopulated with a minimum of 4 books, and its creation and population occur before the login screen is displayed.
 • The app employs hierarchical navigation for seamless movement between screens. Pressing "back" on the Books List Screen returns users to the Login Screen, clearing any prior content, including form fields and error messages.<br><br>
 
-![image](https://github.com/wtse1225/Library-Mobile-App/assets/105259859/8c0f8e62-1de0-4ca2-a189-0d1e859bcb9c)
-![image](https://github.com/wtse1225/Library-Mobile-App/assets/105259859/6e5c2679-e105-4013-b2ac-56861f8653db)
+![image](https://github.com/wtse1225/Library-Mobile-App/assets/105259859/9dc53f80-e467-463b-bcaa-a8f860695e28) 
+![image](https://github.com/wtse1225/Library-Mobile-App/assets/105259859/ddae1fc5-60fc-426a-acab-5b1cd8b2db50)
