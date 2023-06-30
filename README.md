@@ -1,5 +1,5 @@
 # Library-WaiHingWilliamTse
-Technologies used: Xamarin.Forms, SQLite, C#\
+Technologies used: Xamarin.Forms, SQLite, C#<br><br>
 This library mobile app leverages Xamarin.Forms and SQLite to provide a user-friendly interface for managing book interactions, ensuring a seamless experience for library users.<br><br>
 • Developed a cross-platform mobile application that enables users to interact with a library's book collection. The app features two screens: a Login Screen and a Books List Screen. The Login Screen allows users to sign in or create a new account, with validation on form fields and static user credentials. Upon successful login, users are navigated to the Books List Screen.<br><br>
 • The Books List Screen displays a welcome message to the logged-in user and a dynamically loaded list of books from a SQLite database. Each book's borrowing status is shown, indicating availability, checked-out status with the borrower's name, or if the user has borrowed the book. Context actions enable users to check out or return books, with pop-up messages indicating the success or failure of the operation.<br><br>
